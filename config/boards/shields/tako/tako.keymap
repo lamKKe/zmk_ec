@@ -14,7 +14,7 @@
 #define SYM_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+
 
 / {
     behaviors {
@@ -26,6 +26,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        lt: layer_tap {
+        compatible = "zmk,behavior-layer-tap";
+        label = "LAYER_TAP";
+        #binding-cells = <2>;
+        tapping_term_ms = <200>;
+        layer = <1>;
+        bindings = <&kp SPACE>;
+    };
     };
 
     keymap {
