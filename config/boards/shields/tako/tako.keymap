@@ -26,14 +26,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        lt: layer_tap {
-        compatible = "zmk,behavior-layer-tap";
-        label = "LAYER_TAP";
-        #binding-cells = <2>;
-        tapping_term_ms = <200>;
-        layer = <1>;
-        bindings = <&kp SPACE>;
-    };
+        
     };
 
     keymap {
@@ -44,7 +37,7 @@
                 &kp QUOT  &kp COMMA  &kp DOT   &kp P      &kp Y      &kp F      &kp G      &kp C      &kp R      &kp L
                 &hm LGUI A &hm LALT O &hm LCTRL E &hm LSHFT U &kp I      &kp D      &hm RSHFT H &hm RCTRL T &hm LALT N &hm LGUI S
                 &kp SCLN  &kp Q      &kp J      &kp K      &kp X      &kp B      &kp M      &kp W      &kp V      &kp Z
-                                                  &lt 1 SPACE  &kp TAB  &lt 3 ENT  &lt 2 BKSP
+                                                  &lt 1 SPACE  &lt 4 TAB  &lt 3 ENT  &lt 2 BKSP
             >;
         };
 
